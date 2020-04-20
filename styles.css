@@ -56,7 +56,50 @@ body {
     color: black !important;
     
 }
+/*Footer*/
+.footer{
+    width: 100%;
+    display: block;
+    padding: 70px 0;
+    box-sizing: border-box;
+}
 
+.inner-footer{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+.inner-footer .footer-text-container{
+    padding-left: 30px;
+    float: left;
+    display: block;
+}
+.inner-footer .footer-third{
+    width: calc(21.66666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+.inner-footer .footer-third :last-child{
+    margin-right: 0;
+}
+.inner-footer .footer-third h1{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inner-footer .footer-third a{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.inner-footer .footer-third li{
+    display: inline-block;
+    padding: 0 5px;
+}
 
 /*Portfolio Styles*/
 
@@ -129,3 +172,4 @@ body {
 .profile-content-wrapper h1{
     color: darkcyan;
 }
+

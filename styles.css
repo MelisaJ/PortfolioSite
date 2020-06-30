@@ -23,9 +23,28 @@ body {
     display: flex;
 }
 
+.right-side .Links {
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.right-side .Links li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.right-side .Links a:visited {
+    color: black;
+}
+
+.right-side .Links a:link {
+    color: black;
+}
+
 .nav-wrapper>.left-side>div {
+    margin-top: 20px;
     margin-right: 20px;
-    font-size: 0.9em;
+    font-size: 1.0em;
     text-transform: uppercase;
 }
 
@@ -48,57 +67,15 @@ body {
 .nav-link-wrapper a:hover {
     color: black;
 }
-.active-nav-link{
+
+.active-nav-link {
     border-bottom: 1px solid black;
 
 }
-.active-nav-link a{
+
+.active-nav-link a {
     color: black !important;
-    
-}
-/*Footer*/
-.footer{
-    width: 100%;
-    display: block;
-    padding: 70px 0;
-    box-sizing: border-box;
-}
 
-.inner-footer{
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-}
-.inner-footer .footer-text-container{
-    padding-left: 30px;
-    float: left;
-    display: block;
-}
-.inner-footer .footer-third{
-    width: calc(21.66666666667% - 20px);
-    margin-right: 10px;
-    float: left;
-    height: 100%;
-}
-.inner-footer .footer-third :last-child{
-    margin-right: 0;
-}
-.inner-footer .footer-third h1{
-    font-size: 22px;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.inner-footer .footer-third a{
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-}
-
-.inner-footer .footer-third li{
-    display: inline-block;
-    padding: 0 5px;
 }
 
 /*Portfolio Styles*/
@@ -113,7 +90,7 @@ body {
 }
 
 .portfolio-img-background {
-    height: 450px;
+    height: 400px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -155,21 +132,42 @@ body {
 }
 
 /* About Page */
-
-.two-column-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.about-content-wrapper{
+    position: relative;
 }
-
-.profile-image-wrapper img{
+.profile-image-wrapper{
+    position: relative;
+  display: inline-block;
+}
+.profile-image-wrapper:before{
+    content: '';
+    background-color: #000;
+    opacity: 0.5;
     width: 100%;
-    padding: 30px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.profile-image-wrapper img {
+    filter: blur(5px);
+    width: 100%;
 }
 
-.profile-content-wrapper{
-    padding: 40px;
+.about-content-wrapper .profile-content-wrapper {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    height: 100%;
+
 }
-.profile-content-wrapper h1{
+
+.profile-content-wrapper h1 {
     color: darkcyan;
 }
-

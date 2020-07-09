@@ -114,30 +114,31 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
 }
-
-
 
 .img-text-wrapper .subtitle {
     transition: 1s;
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 20px;
     color: transparent;
 }
 
 .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 20px;
     color: darkcyan;
 }
 
 .img-darken {
     transition: 1s;
-    filter: brightness(10%);
+    filter: brightness(5%);
 }
 
 /* About Page */

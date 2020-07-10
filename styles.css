@@ -79,10 +79,29 @@ body {
 }
 
 /*Portfolio Styles*/
+.inspira{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+.inspira img{
+    width: 50%;
+    margin: auto;
+}
+
+.insp-grid h1{
+    font-weight: 700;
+    font-size: 60px;
+}
+.insp-grid p{
+    font-weight: 500;
+    font-size: 20px;
+}
 
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
 }
 
 .portfolio-item-wrapper {

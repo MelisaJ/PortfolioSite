@@ -98,6 +98,26 @@ body {
     font-size: 20px;
 }
 
+.quote-space{
+    padding-top: 100px;
+}
+.quote-space img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.quote-space .quote{
+    margin-top: -25px;
+    height: 300px;
+    width: 100%;
+    background-color: darkturquoise;
+}
+.quote h1{
+    color: white;
+}
+
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -152,7 +172,7 @@ body {
 .img-text-wrapper:hover .subtitle {
     font-weight: 900;
     font-size: 20px;
-    color: darkcyan;
+    color: darkturquoise;
 }
 
 .img-darken {

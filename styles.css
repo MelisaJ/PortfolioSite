@@ -79,61 +79,71 @@ body {
 }
 
 /*Portfolio Styles*/
-.inspira{
+.inspira {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
 }
-.inspira img{
+
+.inspira img {
     width: 50%;
     margin: auto;
 }
 
-.insp-grid h1{
+.insp-grid h1 {
     font-weight: 700;
     font-size: 60px;
 }
-.insp-grid p{
+
+.insp-grid p {
     font-weight: 500;
     font-size: 20px;
 }
 
-.quote-space{
+.quote-space {
     padding-top: 100px;
 }
-.quote-space img{
+
+.quote-space img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.quote-space .quote{
+.quote-space .quote {
     margin-top: -25px;
     height: 300px;
     width: 100%;
     background-color: darkturquoise;
 }
-.quote h1{
+
+.quote h1 {
     color: white;
     text-align: center;
     padding-top: 50px;
 }
-.quote p{
+
+.quote p {
     font-size: 20px;
 }
-.empty-space{
+
+.empty-space {
     height: 100px;
 }
-.project-title{
-    color:black;
+
+.project-title {
+    color: black;
     text-align: center;
 }
-.project-title h1{
+
+.project-title h1 {
     font-weight: 700;
     font-size: 40px;
-    text-decoration: underline;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
 }
-.project-title p{
+
+.project-title p {
     text-decoration: none;
     font-size: 20px;
 
@@ -207,47 +217,12 @@ body {
     position: relative;
 }
 
-.profile-image-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.profile-image-wrapper:before {
-    content: '';
-    background-color: #000;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
-}
-
-.profile-image-wrapper {
-    height: 500px;
-    width: 100%;
-    margin-bottom: -5px;
-}
-
-.about-content-wrapper .profile-content-wrapper {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/opacity/see-through */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    height: 100%;
-}
-
-.profile-content-wrapper .basic-info {
+.basic-info {
     width: 100%;
 }
 
 .basic-info h1 {
-    color: white;
+    color: black;
     border-bottom: 2px solid currentColor;
     display: inline-block;
     margin-left: 100px;
@@ -262,13 +237,65 @@ body {
 
 #t01 th {
     color: white;
-    background-color: darkcyan;
+    background-color: darkturquoise;
     text-align: right;
     padding-right: 10px;
 }
 
 #t01 td {
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     padding-left: 10px;
+}
+
+.skill-info {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.skill-info h1 {
+    color: black;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    margin-left: 100px;
+}
+.skill-info .skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#lang {
+    height: 200px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+#lang th {
+    color: white;
+    background-color: darkturquoise;
+    text-align: right;
+}
+
+#file{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+	border: 0;
+	width: 100%;
+	height: 30px;
+    border-radius: 0px;
+}
+#lang td progress::-webkit-progress-bar {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 0px;
+}
+#lang td progress::-webkit-progress-value {
+	background: rgba(0, 206, 209, 0.7);;
+	border-radius: 0px;
+}
+#lang td progress::-moz-progress-bar {
+	background: rgba(0, 206, 209, 0.7);
+	border-radius: 0px;
 }

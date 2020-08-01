@@ -304,3 +304,15 @@ body {
 	background: rgba(0, 206, 209, 0.7);
 	border-radius: 0px;
 }
+
+@media (max-width: 1000px) {
+
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    .skill-info .skills{
+        display:block;
+    }
+}

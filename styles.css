@@ -2,12 +2,13 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    margin: 0px;
+    margin: 0px;;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    background-color:#ea9971;
 }
 
 
@@ -16,7 +17,8 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 20px;
+    background-color:#e6d3b9;
 }
 
 .left-side {
@@ -79,138 +81,104 @@ body {
 }
 
 /*Portfolio Styles*/
+.welcome
+{
+    background-color: #ebbd8c;
+}
+
 .inspira {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
 }
-
 .inspira img {
     width: 50%;
     margin: auto;
+    margin-top: 50px;
 }
-
+.insp-grid
+{
+    margin-top: 100px;
+}
+.insp-grid h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #7b4255;
+    line-height: 20px;
+}
 .insp-grid h1 {
     font-weight: 700;
     font-size: 60px;
+    color: #9d5d7a;
+    line-height: 40px;
 }
-
 .insp-grid p {
     font-weight: 500;
     font-size: 20px;
+    color: #7b4255;
 }
 
-.quote-space {
-    padding-top: 100px;
-}
-
-.quote-space img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.quote-space .quote {
-    margin-top: -25px;
-    height: 300px;
-    width: 100%;
-    background-color: darkturquoise;
-}
-
-.quote h1 {
-    color: white;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.quote p {
-    font-size: 20px;
-}
 
 .empty-space {
-    height: 100px;
+    height: 200px;
 }
 
 .project-title {
-    color: black;
-    text-align: center;
+    color: #7b4255;
+    text-align: left;
+    position: relative;
+    background-color: #ea9971;
 }
-
+.project-title svg{
+    display: block;
+    position: absolute;
+}
 .project-title h1 {
+    margin-top: 250px;
     font-weight: 700;
     font-size: 40px;
-    border-bottom: 2px solid currentColor;
     display: inline-block;
-}
+    position: relative;
+    margin-left: 100px;
 
+}
 .project-title p {
     text-decoration: none;
     font-size: 20px;
-
-}
-
-
-.portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px;
-}
-
-.portfolio-item-wrapper {
     position: relative;
+}
+
+
+.portfolio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 20px;
+    background-color: #ea9971;
+}
+
+.portfolio-item{
+    background: #7b4255;
+    overflow: hidden;
     margin: 10px;
 }
-
-.portfolio-img-background {
-    height: 250px;
+.portfolio-img{
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 40px;
+    height: 100%;
+    transition: 
+        transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+        opacity 250ms linear;
 }
-
-.logo-wrapper img {
-    margin: auto;
-    display: block;
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.portfolio-img:hover{
+    transform: scale(1.2);
+    opacity: .75;
 }
-
-.img-text-wrapper {
+/*.bg-modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-}
-
-.img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 900;
-    font-size: 20px;
-    color: transparent;
-}
-
-.img-text-wrapper:hover .subtitle {
-    font-weight: 900;
-    font-size: 20px;
-    color: darkturquoise;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(5%);
-}
+}*/
 
 /* About Page */
 .about-content-wrapper {
@@ -237,7 +205,7 @@ body {
 
 #t01 th {
     color: white;
-    background-color: darkturquoise;
+    background-color: #65aed6;
     text-align: right;
     padding-right: 10px;
 }
@@ -274,7 +242,7 @@ body {
 
 #lang th {
     color: white;
-    background-color: darkturquoise;
+    background-color: #65aed6;
     text-align: right;
 }
 #lang td{
@@ -305,14 +273,3 @@ body {
 	border-radius: 0px;
 }
 
-@media (max-width: 1000px) {
-
-    .portfolio-items-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 10px;
-    }
-    .skill-info .skills{
-        display:block;
-    }
-}

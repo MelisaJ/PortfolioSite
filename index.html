@@ -54,7 +54,7 @@
 
             <div class="portfolio-wrapper">
                 <!--Drill Dash-->
-                <div class="portfolio-item">
+                <div id="modalBtn" class="portfolio-item">
                     <img src="Images/Portfolio/project-drill-dash.png" alt="" class="portfolio-img">
                 </div>
                  <!--Gobsmax Galaxy-->
@@ -95,31 +95,72 @@
                 </div>
             </div>
             <div class="empty-space">
+                
+            </div>
+        </div>
+        <!--Project Modal-->
+        <div id="DrillDashModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id ="closeBtn" class="closeBtn">&times;</span>
+                    <h2>Drill Dash</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure maiores tempora laboriosam. 
+                        Omnis culpa, dolor sequi repellendus esse qui iste, fugiat, tempore eos odio commodi incidunt? Accusamus, labore. Consectetur.</p>
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
 
+                            <div class="slide first">
+                                <img src="Images/Games/DrillDash/store_capsule_mainScenex2size.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Games/DrillDash/image_001_0049.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Games/DrillDash/image_001_0129.jpg" alt="">
+                            </div><div class="slide">
+                                <img src="Images/Games/DrillDash/image_001_1293.jpg alt="">
+                            </div>
+                        </div><div class="slide">
+                            <img src="Images/Games/DrillDash/image_001_1293.jpg alt="">
+                        </div>
+                            <div class="auto-nav">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <label for="radio1" class="navBtn"></label>
+                            <label for="radio2" class="navBtn"></label>
+                            <label for="radio3" class="navBtn"></label>
+                            <label for="radio4" class="navBtn"></label>
+                        </div>
+                    </div>
+                    <div class="empty-block">
+
+                    </div>
+                    <p>Hello there....I am modal</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure maiores tempora laboriosam. 
+                        Omnis culpa, dolor sequi repellendus esse qui iste, fugiat, tempore eos odio commodi incidunt? Accusamus, labore. Consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure maiores tempora laboriosam. 
+                    Omnis culpa, dolor sequi repellendus esse qui iste, fugiat, tempore eos odio commodi incidunt? Accusamus, labore. Consectetur.</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal footer</h3>
+                </div>
             </div>
             
         </div>
-        <!--Project Modal-->
-        <div class="bg-modal">
-                
-        </div>
+        
     </div>
-    
+    <script src="main.js"></script>
 </body>
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('img-darken');
-        })
-    })
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-        })
-    })
-</script>
 
 </html>

@@ -281,6 +281,21 @@ body {
 #radio4:checked ~ .first{
     margin-left: -60%;
 }
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+#radio8:checked ~ .first{
+    margin-left: -140%;
+}
+#radio9:checked ~ .first {
+    margin-left: -160%;
+}
 .auto-nav{
     position: absolute;
     width: 800px;
@@ -314,6 +329,27 @@ body {
 {
     background: #ebbd8c;
 }
+#radio5:checked ~ .auto-nav .auto-btn5 
+{
+    background: #ebbd8c;
+}
+#radio6:checked ~ .auto-nav .auto-btn6 
+{
+    background: #ebbd8c;
+}
+#radio7:checked ~ .auto-nav .auto-btn7 
+{
+    background: #ebbd8c;
+}
+#radio8:checked ~ .auto-nav .auto-btn8 
+{
+    background: #ebbd8c;
+}
+#radio9:checked ~ .auto-nav .auto-btn9 
+{
+    background: #ebbd8c;
+}
+
 @keyframes modalopen{
     from{opacity: 0;}
     to{opacity: 1;}

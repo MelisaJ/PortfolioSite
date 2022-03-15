@@ -205,6 +205,14 @@ body {
 .modal-body
 {
     padding: 10px 20px;
+    height: 800px;
+    width: 90%;
+}
+.frame-test{
+    color: #e6d3b9;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
 }
 .modal-footer{
     padding: 10px;
@@ -221,10 +229,12 @@ body {
 }
 .empty-block{
     height: 50px;
+    width: 100%;
 }
 .slider{
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
